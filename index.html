@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js"></script>
+        <link rel="stylesheet" href="./bootstrap.css">
+        <link href="https://fonts.google.com/specimen/Poppins" rel="stylesheet">
+        <title>Age Calculator App</title>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div id="dayContainer">
+                <div id="day">
+                    <span id="dayText">DAY</span>
+                    <br>
+                    <input type="number" id="dayInput" placeholder="DD">
+                    <div id="dayErrorMessage"></div>
+                </div>
+                <div id="month">
+                    <span id="monthText">MONTH</span>
+                    <br>
+                    <input type="number" id="monthInput" placeholder="MM">
+                    <div id="monthErrorMessage"></div>
+                </div>
+                <div id="year">
+                    <span id="yearText">YEAR</span>
+                    <br>
+                    <input type="number" id="yearInput" placeholder="YYYY">
+                    <div id="yearErrorMessage"></div>
+                </div>
+            </div>
+
+            <div id="imageCont">
+                <hr>
+                <img alt="arrowicon" id="arrowIcon" src="./Images/icon-arrow.svg">
+            </div>
+
+            <div id="displayContainer">
+                <div id="displayYears">
+                    <div id="yearCont"> _ _ </div>
+                    years
+                </div>
+                <div id="displayMonths">
+                    <div id="monthCont"> _ _ </div>
+                    <div id="monthNum">months</div>
+                </div>
+                <div id="displayDays">
+                    <div id="dayCont"> _ _ </div>
+                    <div id="dayNum">days</div> 
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

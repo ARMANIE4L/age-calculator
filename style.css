@@ -1,0 +1,156 @@
+@font-face {
+    font-family: poppins;
+    src: url(./fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: poppins2;
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+
+body {
+    background-color: hsl(209, 49%, 87%);
+    padding: 50%;
+    font-size: 32px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#mainContainer {
+    border: 1px solid white;
+    border-radius: 7px 7px 55px 7px;
+    background-color: white;
+}
+
+#dayContainer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding-left: 35px;
+    font-family: poppins2;
+    font-size: 0.7em;
+}
+
+#dayInput, #monthInput, #yearInput {
+    max-width: 90px;
+    height: 35px;
+    padding-left: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 1.5em;
+}
+
+#dayInput:focus, #monthInput:focus, #yearInput:focus {
+    border: 1px solid gray;
+    outline: none;
+} 
+
+#displayContainer {
+    padding: 0px 35px 25px 35px;
+    font-weight: 800;
+    font-size: 50px;
+    font-family: poppins;
+}
+
+#yearCont, #monthCont, #dayCont  {
+    float: left;
+    color: hsl(259, 100%, 65%);
+    font-weight: 800;
+    font-size: 50px;
+}
+
+#arrowIcon {
+    width: 45px;
+    background-color:hsl(259, 100%, 65%);
+    padding: 10px;
+    border-radius: 20px;
+    float: right;
+    margin-right: 50px;
+    transition: 0.5s;
+}
+
+#arrowIcon:hover {
+    width: 45px;
+    background-color:hsl(259, 94%, 20%);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+#imageCont {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+hr {
+   width: 400px;
+   float: left;
+   background-color:hsl(259, 100%, 65%);
+   height: 0px;
+}
+
+span {
+    color: gray;
+}
+
+#dayErrorMessage, #monthErrorMessage, #yearErrorMessage {
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 3px;
+    color: red;
+    font-size: 0.7em;
+    font-style: italic;
+}
+
+/* extra small device */
+@media (min-width: 300px) and (max-width:600px) {
+    body {
+        padding: 50% 20px;
+    }
+    #arrowIcon {
+        position: absolute;
+        left: 46%;
+    }
+
+    #imageCont {
+        margin: 30px 0px;
+    }
+
+    #displayContainer {
+        font-size: 35px;
+        padding-left: 20px;
+    }
+
+    #yearCont, #monthCont, #dayCont  {
+        font-size: 1em;
+        margin-right: 5px;
+    }
+
+    #dayInput, #monthInput, #yearInput {
+        max-width: 75px;
+        height: 40px;
+        font-size: 1.4em;
+    }
+
+    #dayContainer {
+        padding-left: 10px;
+    }
+}
+
+/* medium device */
+@media (min-width:767px) and (max-width: 991px) {
+    body {
+        padding: 100px;
+    }
+}
+
+/* large device */
+
+@media (min-width:991px) {
+    body {
+        padding: 110px;
+    }
+}
